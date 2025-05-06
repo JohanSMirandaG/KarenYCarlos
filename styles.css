@@ -251,7 +251,7 @@ footer p {
 
 .location2 iframe {
   display: block;
-  margin: 20px auto 30px auto; /* top, auto (horizontal), bottom */
+  margin: 20px auto 10px auto; /* top, auto (horizontal), bottom */
   height: 350px;
   width: 60%;
   border: 0;
@@ -307,6 +307,92 @@ footer p {
   text-align: center;
 }
 
+/* regalos */
+.gift-section {
+  background-color: #f9f5f0;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: black;
+}
+
+.gift-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #6b4e71;
+}
+
+.gift-section p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.gift-section .iban {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 20px;
+  letter-spacing: 1px; 
+}
+
+.gift-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/*bus*/
+.bus-info-section {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #5a4e4d;
+}
+
+.bus-info-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #6b4e71;
+}
+
+.bus-info-section p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Loading button */
+.loading-button {
+  background-color: #bde9e3;
+  border: none;
+  color: #6b4e71;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  position: relative;
+  cursor: not-allowed;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #a67c52;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Responsive para celulares */
 @media (max-width: 768px) {
   .photo-under-names img {
@@ -314,7 +400,7 @@ footer p {
   }
   .countdown {
     top: auto;
-    bottom: 9%; /* Aumenta el valor para mover el countdown más arriba */
+    bottom: 10%; /* Aumenta el valor para mover el countdown más arriba */
     right: 50%;
     transform: translateX(50%);
     font-size: 1em;
