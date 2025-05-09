@@ -420,13 +420,27 @@ footer p {
     transform: translateX(50%);
     font-size: 1em;
   }
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(150px); /* Aumenta la distancia en móviles */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-on-scroll.show {
+    animation: slideUp 1.2s ease-out forwards; /* Más lenta en móviles */
+  }
 }
 
 /* Animación de scroll */
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(50px); /* Comienza desde abajo */
+    transform: translateY(100px); /* Comienza desde abajo */
   }
   100% {
     opacity: 1;
@@ -441,5 +455,5 @@ footer p {
 }
 
 .animate-on-scroll.show {
-  animation: slideUp 0.6s ease-out forwards; /* Aplica la animación */
+  animation: slideUp 1s ease-out forwards; /* Aplica la animación */
 }
