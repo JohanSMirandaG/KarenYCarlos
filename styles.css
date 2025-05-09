@@ -364,6 +364,50 @@ footer p {
   margin-bottom: 20px;
 }
 
+.bus-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* Espacio entre las columnas */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.bus-item {
+  flex: 1; /* Hace que las columnas tengan el mismo ancho */
+  min-width: 300px; /* Ancho mínimo para evitar que se reduzcan demasiado */
+  text-align: center;
+  background-color: #f9f5f0; /* Fondo suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.bus-item h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #6b4e71;
+  margin-bottom: 10px;
+}
+
+.bus-item p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.bus-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.bus-item ul li {
+  font-size: 1.5rem;
+  color: #6b4e71;
+}
+
 /* Responsive para celulares */
 @media (max-width: 768px) {
   .photo-under-names img {
