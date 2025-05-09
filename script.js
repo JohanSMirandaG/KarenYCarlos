@@ -25,3 +25,18 @@ const interval = setInterval(() => {
   // Mostrar el contador en el formato deseado
   countdown.innerHTML = `${days} días, ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show"); // Agrega la clase para activar la animación
+      }
+    });
+  });
+
+  elements.forEach((el) => observer.observe(el));
+});
